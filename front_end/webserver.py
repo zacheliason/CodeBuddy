@@ -24,6 +24,7 @@ import uuid
 import sqlite3
 from sqlite3 import Error
 import zipfile
+from lti import *
 
 def make_app():
     app = Application([
