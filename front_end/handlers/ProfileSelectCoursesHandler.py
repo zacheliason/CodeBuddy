@@ -1,3 +1,5 @@
+import BaseUserHandler
+
 class ProfileSelectCourseHandler(BaseUserHandler):
     def get(self, user_id):
         try:

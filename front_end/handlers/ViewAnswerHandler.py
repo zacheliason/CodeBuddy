@@ -1,3 +1,5 @@
+import BaseUserHandler
+
 class ViewAnswerHandler(BaseUserHandler):
     def get(self, course, assignment, exercise):
         try:

@@ -1,3 +1,5 @@
+import BaseUserHandler
+
 class HomeHandler(RequestHandler):
     def prepare(self):
         try:

@@ -1,3 +1,5 @@
+import BaseUserHandler
+
 class ViewScoresHandler(BaseUserHandler):
     def get(self, course, assignment):
         try:

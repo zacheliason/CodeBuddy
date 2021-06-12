@@ -1,3 +1,5 @@
+import BaseUserHandler
+
 class ProfileInstructorHandler(BaseUserHandler):
     def get (self, course_id, user_id):
         try:

@@ -1,3 +1,5 @@
+import BaseUserHandler
+
 class HelpRequestsHandler(BaseUserHandler):
     def get(self, course):
         try:

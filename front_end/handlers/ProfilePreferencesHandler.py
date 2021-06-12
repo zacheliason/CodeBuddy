@@ -1,3 +1,5 @@
+import BaseUserHandler
+
 class ProfilePreferencesHandler(BaseUserHandler):
     def get(self, user_id):
         try:

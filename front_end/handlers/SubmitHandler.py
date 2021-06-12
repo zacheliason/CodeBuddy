@@ -1,3 +1,5 @@
+import BaseUserHandler
+
 class SubmitHandler(BaseUserHandler):
     async def post(self, course, assignment, exercise):
         out_dict = {"text_output": "", "image_output": "", "diff": "", "passed": False, "submission_id": ""}

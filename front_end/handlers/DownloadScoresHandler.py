@@ -1,3 +1,5 @@
+import BaseUserHandler
+
 class DownloadScoresHandler(BaseUserHandler):
     def get(self, course, assignment):
         try:

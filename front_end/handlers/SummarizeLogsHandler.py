@@ -1,3 +1,5 @@
+import BaseUserHandler
+
 class SummarizeLogsHandler(BaseUserHandler):
     def get(self):
         try:

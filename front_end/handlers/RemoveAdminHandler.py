@@ -1,3 +1,5 @@
+import BaseUserHandler
+
 class RemoveAdminHandler(BaseUserHandler):
     def post(self, user_id):
         try:

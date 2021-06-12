@@ -1,3 +1,5 @@
+import BaseUserHandler
+
 class ExportSubmissionsHandler(BaseUserHandler):
     def get(self, course):
         course_basics = content.get_course_basics(course)

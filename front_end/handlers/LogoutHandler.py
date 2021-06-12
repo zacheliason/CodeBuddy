@@ -1,3 +1,5 @@
+from tornado.web import *
+
 class LogoutHandler(RequestHandler):
     def get(self):
         try:

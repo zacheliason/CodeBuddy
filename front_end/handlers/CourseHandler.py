@@ -1,3 +1,5 @@
+import BaseUserHandler
+
 class CourseHandler(BaseUserHandler):
     def get(self, course):
         if self.is_administrator() or self.is_instructor_for_course(course) or self.is_assistant_for_course(course):

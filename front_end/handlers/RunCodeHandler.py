@@ -1,3 +1,5 @@
+import BaseUserHandler
+
 class RunCodeHandler(BaseUserHandler):
     async def post(self, course, assignment, exercise):
         out_dict = {"text_output": "", "image_output": ""}

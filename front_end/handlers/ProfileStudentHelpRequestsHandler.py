@@ -1,3 +1,5 @@
+import BaseUserHandler
+
 class ProfileStudentHelpRequestsHandler(BaseUserHandler):
     def get(self):
         try:

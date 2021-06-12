@@ -1,3 +1,5 @@
+import BaseUserHandler
+
 class SubmitHelpRequestHandler(BaseUserHandler):
     def post(self, course, assignment, exercise):
         try:

@@ -1,3 +1,5 @@
+import logging
+
 # See https://quanttype.net/posts/2020-02-05-request-id-logging.html
 class LoggingFilter(logging.Filter):
     def filter(self, record):

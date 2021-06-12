@@ -1,3 +1,5 @@
+import BaseUserHandler
+
 class ProfilePersonalInfoHandler(BaseUserHandler):
     def get(self, user_id):
         try:

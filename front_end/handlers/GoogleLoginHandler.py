@@ -1,3 +1,6 @@
+import BaseUserHandler
+from tornado.auth import GoogleOAuth2Mixin
+
 class GoogleLoginHandler(RequestHandler, GoogleOAuth2Mixin):
     async def get(self):
         try:

@@ -1,3 +1,5 @@
+import BaseUserHandler
+
 class GetSubmissionsHandler(BaseUserHandler):
     def get(self, course, assignment, exercise, user_id):
         try:

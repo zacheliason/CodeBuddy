@@ -1,3 +1,5 @@
+import BaseUserHandler
+
 class CreateVideoExerciseHandler(BaseUserHandler):
     def post(self, course, assignment):
         response_dict = {"message": ""}

@@ -1,3 +1,5 @@
+from tornado.web import *
+
 class BaseUserHandler(RequestHandler):
     def prepare(self):
         try:

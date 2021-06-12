@@ -1,3 +1,5 @@
+import BaseUserHandler
+
 class ImportCourseHandler(BaseUserHandler):
     def post(self):
         try:

@@ -1,3 +1,5 @@
+import BaseUserHandler
+
 class UnregisterHandler(BaseUserHandler):
     def post(self, course, user_id):
         try:

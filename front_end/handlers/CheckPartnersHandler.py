@@ -1,3 +1,5 @@
+import BaseUserHandler
+
 class CheckPartnersHandler(BaseUserHandler):
     def post(self, course):
         partner_key = self.get_body_argument("partner_key")

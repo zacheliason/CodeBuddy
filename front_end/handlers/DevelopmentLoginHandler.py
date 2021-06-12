@@ -1,3 +1,5 @@
+import BaseUserHandler
+
 class DevelopmentLoginHandler(RequestHandler):
     def get(self, target_path):
         if not target_path:

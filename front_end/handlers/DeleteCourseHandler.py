@@ -1,3 +1,5 @@
+import BaseUserHandler
+
 class DeleteCourseHandler(BaseUserHandler):
     def get(self, course):
         try:

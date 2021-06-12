@@ -1,3 +1,5 @@
+import BaseUserHandler
+
 class ResetTimerHandler(BaseUserHandler):
     async def post(self, course, assignment, user):
         try:

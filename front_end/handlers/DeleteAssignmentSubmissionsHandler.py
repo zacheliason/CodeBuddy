@@ -1,3 +1,5 @@
+import BaseUserHandler
+
 class DeleteAssignmentSubmissionsHandler(BaseUserHandler):
     def post(self, course, assignment):
         try:

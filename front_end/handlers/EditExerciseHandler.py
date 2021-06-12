@@ -1,3 +1,5 @@
+import BaseUserHandler
+
 class EditExerciseHandler(BaseUserHandler):
     def get(self, course, assignment, exercise):
         try:
