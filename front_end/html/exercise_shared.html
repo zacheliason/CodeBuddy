@@ -3,10 +3,10 @@
             <!--The next divs contain the modals for this page-->
 
             <div id="move_exercise_modal" class="modal">
-                <form method="post" action="/move_exercise/{{ course_basics['id'] }}/{{ assignment_basics['id'] }}/{{ exercise_basics['id'] }}">
                 <div class="modal-content">
                     <!--<span class="close">&times;</span>-->
                     <p>Move an exercise to a different assignment:</p>
+                    <div class="notification is-warning is-light" id="move_exercise_message" style="display:none"></div>
                     <div class="select is-light">
                         <select name="new_assignment_id" id="new_assignment_id">
                         {% for assignment in assignment_options %}
@@ -16,10 +16,9 @@
                     </div>
                     <p class="buttons">
                         <a id="move_cancel_button" class="modal-button button is-light">Cancel</a>
-                        <input type="submit" id="move_button" class="modal-button button is-dark" value="Move"/>
+                        <button onclick="moveExercise({{ course_basics['id'] }}, {{assignment_basics['id']}}, {{ exercise_basics['id'] }})" id="move_button" class="modal-button button is-dark">Move</button>
                     </p>
                 </div>
-                </form>
             </div>
 
             <div id="delete_submissions_modal" class="modal">
@@ -86,6 +85,31 @@
                                 location.reload();
                             }
                     });
+                }
+                
+                function moveExercise(course, assignment, exercise) {
+                    var new_assignment_id = document.getElementById("new_assignment_id").value;
+                    var message = document.getElementById("move_exercise_message")
+                    var modal = document.getElementById("move_exercise_modal");
+                    console.log(new_assignment_id)
+                    if (new_assignment_id != null && new_assignment_id != "") {
+                        $.post(`/move_exercise/${course}/${assignment}/${exercise}`, {"new_assignment_id": new_assignment_id},
+                            function(data) {
+                                var json_data = JSON.parse(data);
+                                if (json_data.result != "") {
+                                  message.innerHTML = json_data.result;
+                                  message.style.display = "block";
+                                }
+                                else {
+                                    modal.style.display = "none";
+                                    // location.reload();
+                                }
+                    });
+                  }
+                  else {
+                    message.innerHTML = "Please select an assignment."
+                    message.style.display = "block";
+                  }
                 }
 
                 function showMoveExerciseModal() {
