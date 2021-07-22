@@ -24,71 +24,71 @@ import uuid
 import sqlite3
 from sqlite3 import Error
 import zipfile
-from .Handlers import AddInstructorHandler
-from Handlers.AssignmentHandler import *
-from Handlers.BackEndHandler import *
-from Handlers.BaseUserHandler import *
-from Handlers.CheckPartnersHandler import *
-from Handlers.CopyAssignmentHandler import *
-from Handlers.CourseHandler import *
-from Handlers.CreateVideoExerciseHandler import *
-from Handlers.DeleteAssignmentHandler import *
-from Handlers.DeleteAssignmentSubmissionsHandler import *
-from Handlers.DeleteCourseHandler import *
-from Handlers.DeleteCourseSubmissionsHandler import *
-from Handlers.DeleteExerciseHandler import *
-from Handlers.DeleteExerciseSubmissionsHandler import *
-from Handlers.DeleteHelpRequestHandler import *
-from Handlers.DevelopmentLoginHandler import *
-from Handlers.DownloadAllScoresHandler import *
-from Handlers.DownloadFileHandler import *
-from Handlers.DownloadScoresHandler import *
-from Handlers.EditAssignmentHandler import *
-from Handlers.EditCourseHandler import *
-from Handlers.EditScoresHandler import *
-from Handlers.EditExerciseHandler import *
-from Handlers.ExerciseHandler import *
-from Handlers.ExerciseScoresHandler import *
-from Handlers.ExerciseSubmissionsHandler import *
-from Handlers.ExportCourseHandler import *
-from Handlers.ExportSubmissionsHandler import *
-from Handlers.GetPresubmissionHandler import *
-from Handlers.GetSubmissionHandler import *
-from Handlers.GetSubmissionsHandler import *
-from Handlers.GoogleLoginHandler import *
-from Handlers.HelpRequestsHandler import *
-from Handlers.HomeHandler import *
-from Handlers.ImportCourseHandler import *
-from Handlers.LoggingFilter import *
-from Handlers.LogoutHandler import *
-from Handlers.MoveExerciseHandler import *
-from Handlers.ProfileAdminHandler import *
-from Handlers.ProfileCoursesHandler import *
-from Handlers.ProfileHelpRequestsHandler import *
-from Handlers.ProfileInstructorHandler import *
-from Handlers.ProfileManageUsersHandler import *
-from Handlers.ProfilePersonalInfoHandler import *
-from Handlers.ProfilePreferencesHandler import *
-from Handlers.ProfileSelectCourseHandler import *
-from Handlers.ProfileStudentHelpRequestsHandler import *
-from Handlers.RemoveAdminHandler import *
-from Handlers.RemoveAssistantHandler import *
-from Handlers.RemoveInstructorHandler import *
-from Handlers.ResetTimerHandler import *
-from Handlers.RunCodeHandler import *
-from Handlers.SavePresubmissionHandler import *
-from Handlers.StaticFileHandler import *
-from Handlers.StudentExerciseHandler import *
-from Handlers.StudentScoresHandler import *
-from Handlers.SubmitHandler import *
-from Handlers.SubmitHelpRequestHandler import *
-from Handlers.SummarizeLogsHandler import *
-from Handlers.TestHandler import *
-from Handlers.UnregisterHandler import *
-from Handlers.ViewAnswerHandler import *
-from Handlers.ViewHelpRequestsHandler import *
-from Handlers.ViewScoresHandler import *
-# from Handlers import *
+from Handlers import *
+# from Handlers import AddInstructorHandler
+# from Handlers.AssignmentHandler import *
+# from Handlers.BackEndHandler import *
+# from Handlers.BaseUserHandler import *
+# from Handlers.CheckPartnersHandler import *
+# from Handlers.CopyAssignmentHandler import *
+# from Handlers.CourseHandler import *
+# from Handlers.CreateVideoExerciseHandler import *
+# from Handlers.DeleteAssignmentHandler import *
+# from Handlers.DeleteAssignmentSubmissionsHandler import *
+# from Handlers.DeleteCourseHandler import *
+# from Handlers.DeleteCourseSubmissionsHandler import *
+# from Handlers.DeleteExerciseHandler import *
+# from Handlers.DeleteExerciseSubmissionsHandler import *
+# from Handlers.DeleteHelpRequestHandler import *
+# from Handlers.DevelopmentLoginHandler import *
+# from Handlers.DownloadAllScoresHandler import *
+# from Handlers.DownloadFileHandler import *
+# from Handlers.DownloadScoresHandler import *
+# from Handlers.EditAssignmentHandler import *
+# from Handlers.EditCourseHandler import *
+# from Handlers.EditScoresHandler import *
+# from Handlers.EditExerciseHandler import *
+# from Handlers.ExerciseHandler import *
+# from Handlers.ExerciseScoresHandler import *
+# from Handlers.ExerciseSubmissionsHandler import *
+# from Handlers.ExportCourseHandler import *
+# from Handlers.ExportSubmissionsHandler import *
+# from Handlers.GetPresubmissionHandler import *
+# from Handlers.GetSubmissionHandler import *
+# from Handlers.GetSubmissionsHandler import *
+# from Handlers.GoogleLoginHandler import *
+# from Handlers.HelpRequestsHandler import *
+# from Handlers.HomeHandler import *
+# from Handlers.ImportCourseHandler import *
+# from Handlers.LoggingFilter import *
+# from Handlers.LogoutHandler import *
+# from Handlers.MoveExerciseHandler import *
+# from Handlers.ProfileAdminHandler import *
+# from Handlers.ProfileCoursesHandler import *
+# from Handlers.ProfileHelpRequestsHandler import *
+# from Handlers.ProfileInstructorHandler import *
+# from Handlers.ProfileManageUsersHandler import *
+# from Handlers.ProfilePersonalInfoHandler import *
+# from Handlers.ProfilePreferencesHandler import *
+# from Handlers.ProfileSelectCourseHandler import *
+# from Handlers.ProfileStudentHelpRequestsHandler import *
+# from Handlers.RemoveAdminHandler import *
+# from Handlers.RemoveAssistantHandler import *
+# from Handlers.RemoveInstructorHandler import *
+# from Handlers.ResetTimerHandler import *
+# from Handlers.RunCodeHandler import *
+# from Handlers.SavePresubmissionHandler import *
+# from Handlers.StaticFileHandler import *
+# from Handlers.StudentExerciseHandler import *
+# from Handlers.StudentScoresHandler import *
+# from Handlers.SubmitHandler import *
+# from Handlers.SubmitHelpRequestHandler import *
+# from Handlers.SummarizeLogsHandler import *
+# from Handlers.TestHandler import *
+# from Handlers.UnregisterHandler import *
+# from Handlers.ViewAnswerHandler import *
+# from Handlers.ViewHelpRequestsHandler import *
+# from Handlers.ViewScoresHandler import *
 # sys.path.append()
 
 def make_app():
